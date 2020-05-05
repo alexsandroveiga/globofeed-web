@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import Header from '../../components/Header';
 
-import { Container, PostList, Form, Categories } from './styles';
+import { Container, PostList, Categories, SubCategories } from './styles';
 
 import api from '../../services/api';
 
@@ -63,6 +63,17 @@ const Dashboard: React.FC = () => {
           Esportes
         </button>
       </Categories>
+      {search === 'Filmes' && (
+        <SubCategories>
+          <button type="button">Terror</button>
+          <button type="button">Drama</button>
+          <button type="button">Aventura</button>
+          <button type="button">Ficção Científica</button>
+          <button type="button">Comédia</button>
+          <button type="button">Infantil</button>
+          <button type="button">Animação</button>
+        </SubCategories>
+      )}
       <PostList>
         {posts.map((post) => (
           <div key={post._id}>

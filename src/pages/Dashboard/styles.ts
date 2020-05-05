@@ -76,6 +76,37 @@ export const Categories = styled.div`
   }
 `;
 
+export const SubCategories = styled.div`
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+
+  button {
+    margin: 0 0.5rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #0669de;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 8px;
+  }
+
+  @media screen and (min-width: 74em) {
+    width: 1100px;
+    margin: 0 auto 1rem auto;
+    justify-content: center;
+
+    button {
+      font-size: 12px;
+    }
+  }
+`;
+
 export const PostList = styled.div`
   display: flex;
   flex-flow: row wrap;
@@ -154,13 +185,16 @@ export const PostList = styled.div`
         span {
           background: #0669de;
           color: #fff;
-          padding: 4px;
+          padding: 0 4px;
           font-size: 8px;
+          line-height: 8px;
           text-transform: uppercase;
           font-weight: bold;
           border-radius: 4px;
           margin-right: 4px;
-          display: inline-block;
+          height: 20px;
+          display: inline-flex;
+          align-items: center;
         }
       }
     }
