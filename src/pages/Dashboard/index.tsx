@@ -68,7 +68,6 @@ const Dashboard: React.FC = () => {
           <button type="button">Terror</button>
           <button type="button">Drama</button>
           <button type="button">Aventura</button>
-          <button type="button">Ficção Científica</button>
           <button type="button">Comédia</button>
           <button type="button">Infantil</button>
           <button type="button">Animação</button>
