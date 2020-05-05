@@ -1,5 +1,14 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { FaTimes } from 'react-icons/fa';
+
+const appear = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
 
 export const Container = styled.div`
   background: #fff;
@@ -10,6 +19,7 @@ export const Container = styled.div`
   z-index: 1;
   position: relative;
   border: 1px solid #f0f0f0;
+  animation: ${appear} 2s;
 
   > h1 {
     color: #0669de;

@@ -1,8 +1,18 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const slide = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
 
 export const Container = styled.header`
   background: #0669de;
   margin-bottom: 1rem;
+  animation: ${slide} 0.25s;
 
   img {
     height: 40px;

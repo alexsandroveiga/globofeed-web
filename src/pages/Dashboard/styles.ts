@@ -1,4 +1,15 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const appear = keyframes`
+  from {
+    opacity: 0;
+    visibility: hidden
+  }
+  to {
+    opacity: 1;
+    visibility: visible
+  }
+`;
 
 export const Container = styled.div`
   /*&:after {
@@ -35,6 +46,7 @@ export const Categories = styled.div`
   display: flex;
   margin: 0 1rem 16px 1rem;
   justify-content: space-between;
+  animation: ${appear} 1s;
 
   @media screen and (min-width: 74em) {
     width: 1100px;
@@ -68,6 +80,7 @@ export const PostList = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  animation: ${appear} 1s;
 
   @media screen and (min-width: 74em) {
     width: 1100px;
