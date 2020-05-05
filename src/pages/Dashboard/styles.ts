@@ -16,7 +16,7 @@ export const Form = styled.div`
   margin: 0 16px 16px 16px;
 
   @media screen and (min-width: 74em) {
-    width: 1300px;
+    width: 1100px;
     margin: 0 auto;
   }
 
@@ -31,13 +31,40 @@ export const Form = styled.div`
   }
 `;
 
+export const Categories = styled.div`
+  display: flex;
+  margin: 0 1rem 16px 1rem;
+  justify-content: space-between;
+
+  @media screen and (min-width: 74em) {
+    width: 1100px;
+    margin: 0 auto 1rem auto;
+    justify-content: center;
+
+    button {
+      margin: 0 1rem;
+    }
+  }
+
+  button {
+    background: #0669de;
+    border: 0;
+    color: #fff;
+    padding: 4px;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 12px;
+    font-weight: bold;
+  }
+`;
+
 export const PostList = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 
   @media screen and (min-width: 74em) {
-    width: 1300px;
+    width: 1100px;
     margin: 0 auto;
   }
 
@@ -106,14 +133,15 @@ export const PostList = styled.div`
         flex-flow: row wrap;
 
         span {
-          background: #663399;
+          background: #0669de;
           color: #fff;
-          padding: 2px 4px;
-          font-size: 12px;
+          padding: 4px;
+          font-size: 8px;
           text-transform: uppercase;
           font-weight: bold;
           border-radius: 4px;
-          margin: 0 4px 4px 0;
+          margin-right: 4px;
+          display: inline-block;
         }
       }
     }

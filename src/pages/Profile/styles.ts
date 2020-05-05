@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import background from '../../assets/background.jpg';
-
 export const Container = styled.div`
   width: 100%;
   height: 100%;
@@ -9,10 +7,7 @@ export const Container = styled.div`
   display: flex;
   padding: 1rem;
   align-items: center;
-  /* background: url(${background});
-  background: url('https://www.toptal.com/designers/subtlepatterns/patterns/memphis-mini-dark.png');
-  background-size: cover; */
-  background: #DED0F2;
+  background: #f8f8f8;
 
   &:after {
     content: '';

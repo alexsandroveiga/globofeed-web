@@ -11,14 +11,16 @@ const Alert: React.FC = () => {
   return (
     <Container>
       <h1>Selecione seu perfil</h1>
-      <Close size={24} color="#663399" />
+      <Close size={24} color="#0669de" />
       <div>
         <img src={logo} alt="GloboFeed" />
         <Profiles>
-          <img
-            src="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/2985742661548234958-512.png"
-            alt="Boy Profile"
-          />
+          <Link to="Dashboard">
+            <img
+              src="https://i.pinimg.com/736x/c7/d4/0d/c7d40d264aae4f4119cdf4e893ba0268.jpg"
+              alt="Boy Profile"
+            />
+          </Link>
           <img
             src="https://icons.iconarchive.com/icons/dapino/teenage-girl/256/girl-in-love-icon.png"
             alt="Girl Profile"

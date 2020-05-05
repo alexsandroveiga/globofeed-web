@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import Header from '../../components/Header';
 
-import { Container, PostList, Form } from './styles';
+import { Container, PostList, Form, Categories } from './styles';
 
 import api from '../../services/api';
 
@@ -43,13 +43,26 @@ const Dashboard: React.FC = () => {
   return (
     <Container>
       <Header />
-      <Form>
-        <input
-          type="text"
-          placeholder="Digite a categoria"
-          onChange={(e) => setSearch(e.target.value)}
-        />
-      </Form>
+      <Categories>
+        <button type="button" onClick={() => setSearch('')}>
+          Tudo
+        </button>
+        <button type="button" onClick={() => setSearch('Notícias')}>
+          Notícias
+        </button>
+        <button type="button" onClick={() => setSearch('Séries')}>
+          Séries
+        </button>
+        <button type="button" onClick={() => setSearch('Filmes')}>
+          Filmes
+        </button>
+        <button type="button" onClick={() => setSearch('Novelas')}>
+          Novelas
+        </button>
+        <button type="button" onClick={() => setSearch('Esportes')}>
+          Esportes
+        </button>
+      </Categories>
       <PostList>
         {posts.map((post) => (
           <div key={post._id}>

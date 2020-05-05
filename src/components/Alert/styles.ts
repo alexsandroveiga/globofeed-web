@@ -9,9 +9,10 @@ export const Container = styled.div`
   height: auto;
   z-index: 1;
   position: relative;
+  border: 1px solid #f0f0f0;
 
   > h1 {
-    color: #663399;
+    color: #0669de;
     margin: 0 0 32px 0;
     font-size: 24px;
     padding: 0;
@@ -35,7 +36,7 @@ export const Container = styled.div`
   a.button {
     display: flex;
     height: 40px;
-    background: #663399;
+    background: #0669de;
     color: #fff;
     font-size: 14px;
     line-height: 14px;
@@ -64,11 +65,22 @@ export const Profiles = styled.div`
   flex-flow: row wrap;
   align-items: flex-start;
 
+  > a {
+    width: calc(20% - 0.4rem);
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      border: 2px solid #0669de;
+    }
+  }
+
   > img {
     width: calc(20% - 0.4rem);
     height: auto;
     border-radius: 50%;
-    border: 2px solid #663399;
+    border: 2px solid #0669de;
   }
 
   .no-registered {

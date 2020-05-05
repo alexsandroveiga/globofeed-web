@@ -15,6 +15,7 @@ export const Form = styled.div`
   padding: 16px;
   width: 100%;
   height: auto;
+  border: 1px solid #f0f0f0;
 
   img {
     width: 200px;
@@ -34,12 +35,14 @@ export const Form = styled.div`
     align-items: center;
     border: 0;
     border-radius: 4px;
+    border: 1px solid #f0f0f0;
+    border: 1px solid #f0f0f0;
   }
 
   a {
     display: flex;
     height: 40px;
-    background: #663399;
+    background: #0669de;
     color: #fff;
     font-size: 14px;
     line-height: 14px;
