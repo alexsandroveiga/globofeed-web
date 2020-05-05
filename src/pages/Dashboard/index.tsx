@@ -80,7 +80,7 @@ const Dashboard: React.FC = () => {
               <div className="title">
                 <h1>
                   {post.title}
-                  <span>{post.type}</span>
+                  {search === '' && <span>{post.type}</span>}
                 </h1>
               </div>
 

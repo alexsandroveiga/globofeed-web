@@ -52,9 +52,13 @@ export const Form = styled.div`
     text-decoration: none;
     align-items: center;
     justify-content: center;
+
+    & + a {
+      margin-top: 16px;
+    }
   }
 
   @media screen and (min-width: 74em) {
-    width: 400px;
+    width: 500px;
   }
 `;

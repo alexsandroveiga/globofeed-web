@@ -11,7 +11,6 @@ const Alert: React.FC = () => {
   return (
     <Container>
       <h1>Selecione seu perfil</h1>
-      <Close size={24} color="#0669de" />
       <div>
         <img src={logo} alt="GloboFeed" />
         <Profiles>
@@ -42,7 +41,7 @@ const Alert: React.FC = () => {
         </Profiles>
         <span>ou</span>
         <Link className="button" to="Dashboard">
-          Crie um (2 disponíveis)
+          Adicionar um novo
         </Link>
       </div>
     </Container>

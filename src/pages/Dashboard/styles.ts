@@ -55,6 +55,12 @@ export const Categories = styled.div`
     text-transform: uppercase;
     line-height: 12px;
     font-weight: bold;
+
+    @media screen and (min-width: 74em) {
+      padding: 8px;
+      font-size: 14px;
+      line-height: 14px;
+    }
   }
 `;
 

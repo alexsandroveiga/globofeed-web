@@ -17,6 +17,7 @@ export const Container = styled.div`
     font-size: 24px;
     padding: 0;
     line-height: 24px;
+    text-align: center;
   }
 
   > div > img {
